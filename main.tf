@@ -12,7 +12,7 @@ data "aws_subnet" "private1_subnet" {
 
   filter {
     name   = "tag:Name"
-    values = ["Private-1"]
+    values = ["Private-Subnet-1"]
   }
 }
 
@@ -20,14 +20,14 @@ data "aws_subnet" "private2_subnet" {
 
   filter {
     name   = "tag:Name"
-    values = ["Private-2"]
+    values = ["Private-Subnet-2"]
   }
 }
 data "aws_subnet" "public1_subnet" {
 
   filter {
     name   = "tag:Name"
-    values = ["Public-1"]
+    values = ["Public-Subnet-1"]
   }
 }
 
@@ -35,7 +35,7 @@ data "aws_subnet" "public2_subnet" {
 
   filter {
     name   = "tag:Name"
-    values = ["Public-2"]
+    values = ["Public-Subnet-2"]
   }
 }
 
